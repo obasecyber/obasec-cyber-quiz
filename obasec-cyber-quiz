@@ -1,0 +1,29 @@
+const questions = [
+  {
+    question:
+      "Should you click unknown links in emails?",
+    answer: "no"
+  },
+  {
+    question:
+      "Is HTTPS safer than HTTP?",
+    answer: "yes"
+  }
+]
+
+let score = 0
+
+questions.forEach(q => {
+  console.log(q.question)
+
+  // demo answers
+  const userAnswer = "yes"
+
+  if (userAnswer === q.answer) {
+    score++
+  }
+})
+
+console.log(
+  `Quiz Complete. Score: ${score}/${questions.length}`
+)
